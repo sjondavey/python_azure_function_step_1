@@ -29,6 +29,7 @@ equityportfolioevolver
 Virtual environments are required to ensure Azure can recreate a suitable environnement for the function
 ```python
 python -m venv .venv
+.venv\Scripts\activate.bat
 pip install numpy
 pip install pandas
 pip list                           # in case you are interested to see the packages in the virtual environment
@@ -37,6 +38,7 @@ pip freeze > requirements.txt      # create the file with installed packages
 If you want to use the `requirements.txt` from this project, the commands are 
 ```python
 python -m venv .venv
+.venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
