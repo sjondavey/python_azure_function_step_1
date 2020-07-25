@@ -10,9 +10,9 @@ Target Project Structure (NB Azure Functions stuff at this point)
 ```
 equityportfolioevolver  
 ├── .venv/                              # [Not in source control] Python Virtual Environment    
-├── .vscode/                            # [Not in source control] local vscode environment variables  
-│   ├── launch.json                     # [Not in source control] to ensure we can run python from the project root  
-│   └── settings.json                   # [Not in source control] settings to get unittests working correctly  
+├── .vscode/                            # Local vscode environment variables  
+│   ├── launch.json                     # To ensure we can run python from the project root  
+│   └── settings.json                   # Settings to get unittests working correctly  
 ├── equityportfolioevolver/             # Folder for source files that will be deployed to Azure (so excludes testing for example)
 │   ├── contracts/                      # Parent folder for groups of derivatives (called portfolios)  
 │   │   └── portfolio.py                # Simple unmargined equity forwards (mostly hard coded)  
