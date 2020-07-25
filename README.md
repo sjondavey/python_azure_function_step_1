@@ -12,12 +12,12 @@ equityportfolioevolver
 ├── .venv/                              # [Not in source control] Python Virtual Environment    
 ├── .vscode/                            # Local vscode environment variables  
 │   ├── launch.json                     # To ensure we can run python from the project root  
-│   └── settings.json                   # Settings to get unittests working correctly  
+│   └── settings.json                   # Settings to get unittest working correctly  
 ├── equityportfolioevolver/             # Folder for source files that will be deployed to Azure (so excludes testing for example)
 │   ├── contracts/                      # Parent folder for groups of derivatives (called portfolios)  
 │   │   └── portfolio.py                # Simple unmargined equity forwards (mostly hard coded)  
 │   ├── rates/                          # Parent folder for rates environments  
-│   │   └── rates_evolver.py            # Uncorrelated Brownian Motion with flat volatiltiy and constant discount rates
+│   │   └── rates_evolver.py            # Uncorrelated Brownian Motion with flat volatility and constant discount rates
 ├── test/                               # Test folder outside of source folder (will not be packaged and sent to Azure Functions)
 │   ├── test_portfolio.py               # Tests for the portfolio code  
 │   └── test_rates_evolver.py           # Tests for the rates evolver  
@@ -26,7 +26,7 @@ equityportfolioevolver
 ```
 
 ### The virtual environment 
-Virtual environments are required to ensure Azure can recreate a suitable environement for the function
+Virtual environments are required to ensure Azure can recreate a suitable environnement for the function
 ```python
 python -m venv .venv
 pip install numpy
@@ -35,7 +35,7 @@ pip list                           # in case you are interested to see the packa
 pip freeze > requirements.txt      # create the file with installed packages
 ```
 
-### Use the virtual environement in VSCode 
+### Use the virtual environnement in VSCode 
 [It is worth reading Microsoft's document](https://code.visualstudio.com/docs/python/environments) if you have not already done so. The trick is to ensure you have the last two lines of this `launch.json` file. The default version of this file created in the Microsoft document does not have this because it is not using the project structure I'm using.
 ```
 {
