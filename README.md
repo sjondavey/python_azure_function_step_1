@@ -34,6 +34,11 @@ pip install pandas
 pip list                           # in case you are interested to see the packages in the virtual environment
 pip freeze > requirements.txt      # create the file with installed packages
 ```
+If you want to use the `requirements.txt` from this project, the commands are 
+```python
+python -m venv .venv
+pip install -r requirements.txt
+```
 
 ### Use the virtual environnement in VSCode 
 [It is worth reading Microsoft's document](https://code.visualstudio.com/docs/python/environments) if you have not already done so. The trick is to ensure you have the last two lines of this `launch.json` file. The default version of this file created in the Microsoft document does not have this because it is not using the project structure I'm using.
