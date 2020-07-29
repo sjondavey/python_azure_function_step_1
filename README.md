@@ -4,6 +4,7 @@ The idea for this series of projects is to start with a Visual Studio Code, loca
 
 This step is just the base Python project. It can be used to test the basic setup of a VSCode environment with a realistic project structure. There is no Azure Functionality at this stage. To get this project up and running will require the user to create the virtual environment and populate it with the appropriate packages
 ```python
+pip install virtualenv
 python -m venv .venv
 .venv\Scripts\activate.bat
 pip install -r requirements.txt
