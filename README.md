@@ -2,9 +2,9 @@
 
 The idea for this series of projects is to start with a Visual Studio Code, local Python project and ultimately to expose it as an Azure native, serverless calculator using Azure Functions and Azure Blob Storage. The valuation being performed is an overly simplified Monte Carlo simulation of a portfolio of equity forwards. 
 
-This step is just the base Python project. It can be used to test the basic setup of a VSCode environment with a realistic project structure. There is no Azure Functionality at this stage. To get this project up and running will require the user to create the virtual environment and populate it with the appropriate packages
+This step is just the base Python project. It can be used to test the basic setup of a VSCode environment with a realistic project structure. There is no Azure Functionality at this stage. To get this project up and running will require the user to create the virtual environment and populate it with the appropriate packages. 
 ```python
-pip install virtualenv
+pip install virtualenv #From cmd prompt outside of VS code
 python -m venv .venv
 .venv\Scripts\activate.bat
 pip install -r requirements.txt
