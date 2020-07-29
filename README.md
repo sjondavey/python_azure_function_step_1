@@ -8,7 +8,7 @@ python -m venv .venv
 .venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
-The remainder of this document focuses on setting this up manually to run in VSCode. It is intended for someone who is completely new to the development environment and presents so of the concepts that were not obvious to me when I started.
+The remainder of this document focuses on setting this up manually to run in VSCode. It is intended for someone who is completely new to the development environment and presents some of the concepts that were not obvious to me when I started.
 
 Here I use Python 3 and develop in VSCode. Since I'm a noob, I'm documenting all the stuff I have to google to get up and running. This is here to ensure a common starting point, a python project, with a reasonable project structure, tested in VSCode. That's all. If you can run the tests here from within VSCode, you can move to the next step. One word of caution, I test that functions return exact 'float' values. This is not a good idea in general (perhaps different architectures or versions will have slightly different values) but I wanted to have something that was absolutely precise for me. If your tests fail at the nth decimal, just change the tests expected results!
 
