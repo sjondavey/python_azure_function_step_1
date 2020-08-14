@@ -1,6 +1,6 @@
 # python_azure_function_step_1
 
-The aim is to have a series of projects which start with a non-trivial python library in VSCode (this step) and then to expose it as an HTTP Triggered Azure Function (step 2), to trigger from and store results to Azure Blob Storage and to have reasonable logging.
+The aim is to have a series of projects which start with a non-trivial python library in VSCode (this step) and then to expose it as an [HTTP Triggered Azure Function (step 2)](https://github.com/sjondavey/python_azure_function_step_2), to trigger from and store results to Azure Blob Storage and to have reasonable logging.
 
 The valuation being performed is a simplified Monte Carlo simulation of a portfolio of equity forwards. 
 
